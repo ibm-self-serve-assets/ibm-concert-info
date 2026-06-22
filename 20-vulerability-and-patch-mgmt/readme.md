@@ -1,4 +1,4 @@
-## Vulnerability and Patch Management
+# Vulnerability and Patch Management
 
 This document explains how vulnerabilities are identified and managed in Concert.
 

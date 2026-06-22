@@ -1,4 +1,4 @@
-## Installing Concert on VM using Quick Start mode
+# Installing Concert on VM using Quick Start mode
 
 This procedure describes how to install **IBM Concert, Concert Workflows, and Concert Data Apps** using the Quick Start mode for quick deployment on a virtual machine (VM).
 
