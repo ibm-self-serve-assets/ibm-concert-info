@@ -14,13 +14,18 @@ In this exercise:
 
 ### 1.1 Create the Application SBOM File
 
+<details><summary>Click for more info</summary>
+
 1. Open the SBOM Json [file](./files//TVS1-sbom.json).
 
 2. Replace the below values with your actual VM details.
     - VM IP addresses: 9.30.167.125 and 9.46.72.158
     - Ubuntu versions: 24.04 and 22.04
-    
+</details>
+
 ### 1.2 Upload the Application SBOM
+
+<details><summary>Click for more info</summary>
 
 1. Click on **Inventory > Application Inventory** menu to open the **Application Inventory** page.
 <img src="images/img110.png" >
@@ -34,14 +39,18 @@ In this exercise:
 
 5. The file is getting processed.
 <img src="images/img113.png" >
+</details>
 
 ## 2. View SBOM details (Optional)
+
 
 This section is optional and can be skipped if you are already familiar with Concert.
 
 ### 2.1 View Event Log
 
-Let us view at Event Logs Page.
+<details><summary>Click for more info</summary>
+
+Let us view the Event Logs Page.
 
 1. Click on **Administraton > Event Log** menu to open the Event Log page.
 <img src="images/img114.png" >
@@ -49,8 +58,11 @@ Let us view at Event Logs Page.
 2. You can see the file **Processing Completed** status.
 <img src="images/img115.png" >
 <img src="images/img116.png" >
+</details>
 
 ### 2.2 View Application Inventory
+
+<details><summary>Click for more info</summary>
 
 1. Return to **Application Inventory** and locate the created application.
 
@@ -68,7 +80,7 @@ Let us view at Event Logs Page.
 5. Click on the **Version 1.0.0**
 <img src="images/img120b.png" >
 
-6. Explore the topology, overview, SBOM compoenents, build artifacts of the application that version.
+6. Explore the topology, overview, SBOM compoenents, build artifacts of the application for that version.
 <img src="images/img121.png" >
 
 <img src="images/img122.png" >
@@ -81,8 +93,11 @@ Let us view at Event Logs Page.
 
 7. View the CVE Findings section (currently empty).
 <img src="images/img126.png" >
+</details>
 
 ## 2.3 View Environment Inventory
+
+<details><summary>Click for more info</summary>
 
 1. Click on **Inventory > Environment Inventory**.
 <img src="images/img131.png" >
@@ -92,16 +107,19 @@ Let us view at Event Logs Page.
 3. Click on that to see the details.
 <img src="images/img132.png" >
 
-4. Explore the deployments and topology.
+4. Explore the **tDeployments**t and **tTopology**t.
 <img src="images/img133.png" >
 
 <img src="images/img134.png" >
+</details>
 
 ## 3. Import Discovery Advisories
 
 To process the scan report and correlate Advisories, the Advisories should be imported into the Concert. Lets import the Discovery Ubuntu Advisories using the workflow.
 
 ### 3.1 Import the workflow
+
+<details><summary>Click for more info</summary>
 
 1. Click on **Workflow** menu in the top.
 
@@ -124,8 +142,11 @@ The workflow is imported into the Concert Instance.
 
 5. Click on the imported **Discover_Ubuntu_Advisories** workflow
 <img src="images/img144.png" >
+</details>
 
 ### 3.2 Run the workflow
+
+<details><summary>Click for more info</summary>
 
 1. Click on **Run** button.
 <img src="images/img145.png" >
@@ -143,18 +164,24 @@ You can see the execution of the workflow is completed in 51 minutes.
 
 You can see the 195K ubuntu advisories are imported.
 <img src="images/img149.png" >
+</details>
 
 
 ## 4. Upload Vulnerability Scan Report
 
 ### 4.1 Prepare the Scan Report
 
+<details><summary>Click for more info</summary>
+
 1. Download the Qualys scan report from [here](./files/TVS1-Scan-Report.xlsx)
 
 2. Update the **Asset IPV4** column with the IPs of your 2 VMs.
 <img src="images/img152.png" >
+</details>
 
 ### 4.2 Upload Scan report
+
+<details><summary>Click for more info</summary>
 
 1. Click on **Dimensions > Vulnerability** menu.
 <img src="images/img150.png" >
@@ -172,18 +199,22 @@ You can see the Vulnerability with empty records.
 You can see the file **Processing Completed** status in the **Event Logs** screen. 
 
 <img src="images/img153.png" >
+</details>
 
 ## 5. View CVE details (Optional)
 
-1. Click on  **Dimensions > Vulnerability  **
+<details><summary>Click for more info</summary>
+
+1. Click on  **Dimensions > Vulnerability**
 <img src="images/img170.png" >
 
-You can see the CVE's list
+You can see the CVE's list.
+
 2. Click on the CVE to see the details.
 <img src="images/img171.png" >
 <img src="images/img172.png" >
 
-3. Explore the CVE Details, Findings, Applications Impacted and Blast Radius tabs.
+3. Explore the CVE **Overview**, **Findings**, **Applications Impacted** and **Blast Radius** tabs.
 <img src="images/img173.png" >
 
 <img src="images/img174.png" >
@@ -194,8 +225,11 @@ You can see the CVE's list
 
 4. See the **CVE Findings** list in the **Application Inventory** page. Now it shows 7 CVEs.
 <img src="images/img177.png" >
+</details>
 
 ## 6. Approve Actions in Action Center
+
+<details><summary>Click for more info</summary>
 
 We need to approve the generated actions so that Concert can proceed with applying the required patches to those VMs.
 
@@ -216,13 +250,16 @@ You can see the 2 actions listed with **Approval Pending** state.
 
 After the approval both the actions are in the **Approved** status
 <img src="images/img164.png" >
+</details>
 
 
 ## 7. Create Authentication for VM Patching
 
 ### 7.1 Create Authentication for VM1
 
-1. Click on **Workflow > Authentications ** tab.
+<details><summary>Click for more info</summary>
+
+1. Click on **Workflow > Authentications** tab.
 <img src="images/img180.png" >
 
 2. Click on **Create Authentication**
@@ -231,9 +268,9 @@ After the approval both the actions are in the **Approved** status
 
 3. Enter the following:
 
-- Name: G-Linux_ssh_vm1
-- Service: Ansible
-- Private Key (include an empty line at the end)
+- **Name:** G-Linux_ssh_vm1**
+- **Service:** Ansible
+- **Private Key :**  (include an empty line at the end)
 
 ```
 -----BEGIN OPENSSH PRIVATE KEY-----
@@ -241,7 +278,7 @@ xxxxxxxxxxxxxxxxxxxxx
 -----END OPENSSH PRIVATE KEY-----
 
 ```
-- Inventory: Provide the inventory in the format shown below, specifying your VM’s IP address. If multiple VMs use the same private key, you can include them by adding additional lines to the inventory.
+- **Inventory:** Provide the inventory in the format shown below, specifying your VM’s IP address. If multiple VMs use the same private key, you can include them by adding additional lines to the inventory.
 
 ```
 [canary]
@@ -253,23 +290,29 @@ xxxxxxxxxxxxxxxxxxxxx
 <img src="images/img182.png" >
 
 Authentication is created.
+</details>
 
 ### 7.2 Create Authentication for VM2
 
+<details><summary>Click for more info</summary>
+
 Need to repeat the above steps for VM2.
 
-1. Click on Create Authentication
+1. Click on **Create Authentication**
 <img src="images/img183.png" >
 
-2. Create Another Authentication in the same way for another VM.
-- Give a name to this Authentication. Ex: G-Linux_ssh_vm2
+2. Create another Authentication in the same way for VM2.
+- Give a name to this Authentication. Ex: **G-Linux_ssh_vm2**
 - Give the IP address of the VM2 in the Inventory 
 
 <img src="images/img184.png" >
 
 Authentication is created.
+</details>
 
 ### 7.3 Create Combined Authentication (Config Data)
+<details><summary>Click for more info</summary>
+
 
 Combining the above 2 authentication together we need to create another Authentication of ConfigData.
 
@@ -277,9 +320,9 @@ Combining the above 2 authentication together we need to create another Authenti
 <img src="images/img185.png" >
 
 2. Enter the follwoing.
-- Name : G-Linux_ssh
-- Service : Config Data
-- Property : Give the data like the below.
+- **Name :** G-Linux_ssh
+- **Service :** Config Data
+- **Property :** Give the data like the below.
 ```
 {
   "config": [
@@ -302,10 +345,13 @@ Combining the above 2 authentication together we need to create another Authenti
 
 Authentication is created.
 <img src="images/img187.png" >
+</details>
 
 ## 8. Execute Patch Workflow
 
 ### 8.1 Import Remediation_Master workflow
+
+<details><summary>Click for more info</summary>
 
 1. Goto the workflow home page.
 
@@ -324,8 +370,11 @@ Authentication is created.
 <img src="images/img192.png" >
 
 The workflow is imported.
+</details>
 
 ### 8.2 Run the workflow
+
+<details><summary>Click for more info</summary>
 
 1. Click and Open the workflow
 <img src="images/img193.png" >
@@ -338,7 +387,12 @@ The workflow is imported.
 You can see the result of the workflow run.
 <img src="images/img195.png" >
 
+</details>
+
 ### 8.3 View workflow result
+
+<details><summary>Click for more info</summary>
+
 
 1. Goto the **workflow > Run** page, you can see the workflow got executed info.
 <img src="images/img196.png" >
@@ -346,10 +400,15 @@ You can see the result of the workflow run.
 2. Click on **Green arrow** to see the results.
 <img src="images/img197.png" >
 <img src="images/img198.png" >
+</details>
 
 ## 9. View Action center
 
+<details><summary>Click for more info</summary>
+
 In the action center status is changed to **Success**
 <img src="images/img201.png" >
+
+</details>
 
 
