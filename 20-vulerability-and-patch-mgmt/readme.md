@@ -95,7 +95,7 @@ Let us view the Event Logs Page.
 <img src="images/img126.png" >
 </details>
 
-## 2.3 View Environment Inventory
+### 2.3 View Environment Inventory
 
 <details><summary>Click for more info</summary>
 
