@@ -13,8 +13,8 @@
    </tr>
     <tr>
         <td>2</td>
-        <td>OS Vulnerability Management and Auto Remediation</td>
-        <td><a href="./20-vulnerability-and-auto-remediation">Link</a></td>
+        <td>IBM Concert Vulnerability Management for Ubuntu VMs using Qualys Scan Reports</td>
+        <td><a href="./20-Vulnerability-Management-for-Ubuntu-VMs-using-Qualys-Scan-Reports">Link</a></td>
    </tr>
    
 </table>
