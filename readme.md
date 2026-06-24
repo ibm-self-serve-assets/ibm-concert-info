@@ -14,7 +14,7 @@
     <tr>
         <td>2</td>
         <td>Vulnerability and Patch Management</td>
-        <td><a href="./20-vulerability-and-patch-mgmt">Link</a></td>
+        <td><a href="./20-vulnerability-and-auto-remediation">Link</a></td>
    </tr>
    
 </table>
