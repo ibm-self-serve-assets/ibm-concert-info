@@ -10,10 +10,10 @@
         <td>1</td>
         <td>Installing Concert on VM using Quick Start mode </td>
         <td><a href="./10-install-on-vm-quick-start-mode">Link</a></td>
-   </tr>   
+   </tr>
     <tr>
         <td>2</td>
-        <td>Vulnerability and Patch Management</td>
+        <td>OS Vulnerability Management and Auto Remediation</td>
         <td><a href="./20-vulnerability-and-auto-remediation">Link</a></td>
    </tr>
    
