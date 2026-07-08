@@ -40,3 +40,14 @@ A sample SBOM JSON file is available [here](./files//TVS1-sbom.json).
 
 
 <img src="images/img23.png" >
+
+
+## 3. Correlation Between the Scan Report and Application SBOM
+
+The correlation between the vulnerability scan report and the Application SBOM is established using the IP address information. Specifically, the **Asset IPv4** column in the scan report is matched with the **addr** field of the corresponding VM in the **Runtime Components** section of the Application SBOM.
+
+This mapping enables IBM Concert to associate identified vulnerabilities with the correct VM, application, and environment, providing application-aware vulnerability analysis and remediation recommendations.
+
+<img src="images/img03.png" >
+
+<img src="images/img04.png" >
