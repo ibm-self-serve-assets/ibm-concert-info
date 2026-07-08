@@ -32,9 +32,10 @@ A sample SBOM JSON file is available [here](./files//TVS1-sbom.json).
 
 3. The **addr** field (line 30) represents the IP address of the VM or host.
 
-4. The **value** field (line 36) specifies the **operating system name**. Refer to the supported OS names list for valid values.
+4. The **value** field (line 36) specifies the **operating system name**. [Refer](https://www.ibm.com/docs/en/concert/3.0.x?topic=workflows-configuring-auto-remediation#configuring_auto_remediation_workflows_in_concert__table_1) to the supported OS names list for valid values .
 
-5. The **value** field (line 40) specifies the **operating system version**. Refer to the supported OS versions list for valid values.
+5. The **value** field (line 40) specifies the **operating system version**. Refer to the supported OS versions list for valid values. 
+The version should be specified in the format xx.xx (major version and minor version).
 
 6. The VMs defined in the Runtime Components section are displayed under the **Hosts** section of the Environment Inventory page.
 
