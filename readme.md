@@ -16,5 +16,11 @@
         <td>IBM Concert Vulnerability Management for Ubuntu VMs using Qualys Scan Reports</td>
         <td><a href="./20-Vulnerability-Management-for-Ubuntu-VMs-using-Qualys-Scan-Reports">Link</a></td>
    </tr>
+       <tr>
+        <td>3</td>
+        <td>Creating an Application SBOM File Manually in IBM Concert
+</td>
+        <td><a href="./50-creating-application-sbom">Link</a></td>
+   </tr>
    
 </table>
