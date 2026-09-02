@@ -1,8 +1,8 @@
 # ConcertDef-SBOM — Automating Application SBOM generation & uploads for IBM Concert
 
-This document explains how to use the **ConcertDef-SBOM ** custom mode in IBM Bob to generate an Application Software Bill of Materials (SBOM). In addition, the solution enables users to upload the generated Application SBOM, image scan reports, and source code scan reports directly into IBM Concert using Bob.
+This document explains how to use the **ConcertDef-SBOM** custom mode in IBM Bob to generate an Application Software Bill of Materials (SBOM). In addition, the solution enables users to upload the generated Application SBOM, image scan reports, and source code scan reports directly into IBM Concert using Bob.
 
-Detailed information about the ConcertDef-SBOM custom mode is available in the [repository ](https://github.ibm.com/dimallya/concert-bob-custom-mode):
+Detailed information about the ConcertDef-SBOM custom mode is available in the [repository ](https://github.ibm.com/dimallya/concert-bob-custom-mode).
 
 ## 1. Configure the Custom Mode and MCP Server
 
@@ -16,13 +16,11 @@ Detailed information about the ConcertDef-SBOM custom mode is available in the [
 
 1. Install the **ConcertDef SBOM** custom mode by following the instructions available in this [link](https://github.ibm.com/dimallya/concert-bob-custom-mode).
 
-<img src="images/img02.png" >
-
 2. Select the **ConcertDef SBOM** Custom mode in the IBM Bob.
 
-This custom mode is designed to generate a Concert application SBOM using source code repo.
+<img src="images/img02.png" >
 
-<img src="images/img03.png" >
+This custom mode is designed to generate a Concert application SBOM using source code repo.
 
 ## 2. Generate Application SBOM
 
@@ -34,6 +32,9 @@ In this example, we will generate an SBOM for the Robot Shop application.
 ```
 Refer the Trivy reports in this directory and generate a ConcertDef SBOM for application robot-shop. Repo URL: https://github.com/instana/robot-shop”
 ```
+
+<img src="images/img03.png" >
+
 The SBOM is generated like this.
 
 <img src="images/img04.png" >
