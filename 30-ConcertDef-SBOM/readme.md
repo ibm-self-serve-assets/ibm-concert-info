@@ -6,17 +6,19 @@ Detailed information about the **ConcertDef-SBOM** custom mode is available in t
 
 ## 1. Configure the MCP Server and Custom Mode
 
-Let us confiugre the **Concet** MCP Server and **ConcertDef SBOM** Custom Mode.
+Let us confiugre the custom MCP Server and Custom Mode.
 
 <details><summary>Click for more info</summary>
 
-### 1.1. Enable the Concert MCP Server
+### 1.1. Enable the MCP Server
 
-1. Enable the **Concert** MCP Server.
+1. Install the **Concert** MCP Server by following the instructions available in this [link](https://github.com/ibm-self-serve-assets/concert-bob-custom-mode). 
+
+2. Enable the **Concert** MCP Server.
 
 <img src="images/img01.png" >
 
-## 1.2 Configure the ConcertDef-SBOM Custom Mode
+## 1.2 Configure the Custom Mode
 
 1. Install the **ConcertDef SBOM** custom mode by following the instructions available in this [link](https://github.com/ibm-self-serve-assets/concert-bob-custom-mode).
 
