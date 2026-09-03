@@ -2,28 +2,26 @@
 
 This document describes how to use the **ConcertDef-SBOM** custom mode in IBM Bob to generate a Concert-compatible **Application Software Bill of Materials (SBOM)** for given vulnerability scan reports. In Concert, creating an application with relevant components is necessary to upload vulnerability scan reports.  In addition, it shows how to use IBM Bob to upload the generated Application SBOM, container image scan reports, and source code scan reports directly into IBM Concert.
 
-## 1 Configure the ConcertDef-SBOM Custom Mode
+## 1. Configure the ConcertDef-SBOM Custom Mode
 
 Let us install the ConcertDef-SBOM Custom Mode
 
 <details><summary>Click for more info</summary>
 
-1. On the top right of the BoB IDE chat window, click on **Settings** (gear icon).
-2. Click on **Modes**
-3. Locate **Global Modes** and click on **Open** to open Global Modes Configuration file.
-4. Copy the content of custom mode **ConcertDef-SBOM** from [custom_modes.yaml](./custom_modes.yaml) file available in this repository.
-5. Copy [rules-concertdef-sbom](./rules-concertdef-sbom/) directory in your bob global directory location.
-
-The Global directory location is :
-- Linux/macOS: `~/.bob/` 
-- Windows: `%USERPROFILE%\.bob\`
+1. Goto the Global **.bob** in the file explorer.
+   - Linux/macOS: **~/.bob/**
+   - Windows: **##USERPROFILE##/.bob**
+2. Copy the [rules-concertdef-sbom](./rules-concertdef-sbom/) directory under global bob folder.
 
 Sample copy command for **Linux/macOS** :
 ```
-cp -R rules-concertdef-sbom ~/.bob/`
+cp -R rules-concertdef-sbom ~/.bob
 ```
+3. Append the content of the **~/.bob/settings/custom_modes.yaml** with the [custom_modes.yaml](./custom_modes.yaml) file from this repo.
 
-6. Select the **ConcertDef SBOM** Custom mode in the IBM Bob. (if not visible, restart the Bob IDE)
+**Note:** You need to copy from second line **- slug: concertdef-sbom** and paste at the end of the file. Don't forget the follow the indent.
+
+4. Select the **ConcertDef SBOM** Custom mode in the IBM Bob. (if not visible, restart the Bob IDE)
 
 This custom mode is designed to generate a Concert application SBOM using source code repo.
 
