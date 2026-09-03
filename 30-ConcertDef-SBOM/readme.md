@@ -17,7 +17,7 @@ Sample copy command for **Linux/macOS** :
 ```
 cp -R rules-concertdef-sbom ~/.bob
 ```
-<img src="images/img40.png" border="1" >
+<img src="images/img40.png" border=1 >
 
 
 3. Append the content of the **~/.bob/settings/custom_modes.yaml** with the [custom_modes.yaml](./custom_modes.yaml) file from this repo.
