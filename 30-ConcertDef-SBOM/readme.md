@@ -2,8 +2,7 @@
 
 This document describes how to use the **ConcertDef-SBOM** custom mode in IBM Bob to generate a Concert-compatible **Application Software Bill of Materials (SBOM)**. In addition, it shows how to use IBM Bob to upload the generated Application SBOM, container image scan reports, and source code scan reports directly into IBM Concert.
 
-Detailed information about the **ConcertDef-SBOM** custom mode is available in the https://github.ibm.com/dimallya/concert-bob-custom-mode repository.
-
+Detailed information about the **ConcertDef-SBOM** custom mode is available in the https://github.com/ibm-self-serve-assets/concert-bob-custom-mode repository.
 
 ## 1. Configure the MCP Server and Custom Mode
 
@@ -19,7 +18,7 @@ Let us confiugre the **Concet** MCP Server and **ConcertDef SBOM** Custom Mode.
 
 ## 1.2 Configure the ConcertDef-SBOM Custom Mode
 
-1. Install the **ConcertDef SBOM** custom mode by following the instructions available in this [link](https://github.ibm.com/dimallya/concert-bob-custom-mode).
+1. Install the **ConcertDef SBOM** custom mode by following the instructions available in this [link](https://github.com/ibm-self-serve-assets/concert-bob-custom-mode).
 
 2. Select the **ConcertDef SBOM** Custom mode in the IBM Bob.
 
