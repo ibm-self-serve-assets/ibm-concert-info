@@ -29,5 +29,3 @@
    
 </table>
 
-ConcertDef-SBOM — IBM Bob Custom Mode
-Automating Application SBOM generation & upload for IBM Concert
